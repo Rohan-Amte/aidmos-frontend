@@ -1,0 +1,61 @@
+<main class="content">
+  <div class="container-fluid p-0">
+    <h1 class="h3 mb-4">Admin / User</h1>
+    <div class="row g-3 shadow-lg p-3 mb-5 bg-white rounded">
+      <form class="row g-3" [formGroup]="userdata" (ngSubmit)="Save(userdata.value)">
+        <!-- <div class="col-md-2">
+          <label for="inputPassword4" class="form-label">Id</label>
+          <input type="text" class="form-control" id="inputPassword4" formControlName="id">
+        </div>
+        <div class="col-md-5"></div>
+        <div class="col-md-5"></div> -->
+
+        <div class="col-md-5">
+          <label for="inputPassword4" class="form-label">NAME</label>
+          <input type="text" class="form-control" id="inputPassword4" formControlName="name">
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <label for="inputAddress2" class="form-label">USER TYPE</label>
+          <select id="inputState" class="form-select" formControlName="villageid">
+            <option selected >Technical Admin</option>
+            <option >Admin</option>
+            <option >Support</option>
+          </select>
+        </div>
+        <!-- <div class="col-md-5">
+          <label for="inputPassword4" class="form-label">Owner Name</label>
+          <input type="text" class="form-control" id="inputPassword4" formControlName="ownername">
+        </div> -->
+
+        <div class="col-md-5">
+          <label for="inputAddress2" class="form-label">MOBILE NO</label>
+          <input type="text" class="form-control" id="inputAddress2" formControlName="mobileno">
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <label for="inputAddress2" class="form-label">EMAIL</label>
+          <input type="email" class="form-control" id="inputAddress2" formControlName="email">
+        </div>
+
+        <div class="col-md-5">
+          <label for="inputAddress2" class="form-label">USERNAME</label>
+          <input type="text" class="form-control" id="inputAddress2" formControlName="mobileno">
+        </div>
+        <div class="col-md-1"></div>
+
+        <div class="col-md-5">
+          <label for="inputAddress2" class="form-label">PASSWORD</label>
+          <input type="text" class="form-control" id="inputAddress2" formControlName="altmobileno">
+        </div>
+
+
+        <div class="col-md-5 ">
+          <button type="submit" class="btn btn-primary">Save</button>&nbsp;
+          <button type="submit" class="btn btn-danger">Cancel</button>
+        </div>
+      </form>
+    </div>
+
+    </div>
+</main>
